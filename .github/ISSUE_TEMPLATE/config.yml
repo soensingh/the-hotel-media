@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Payment, booking, order or account help
+    url: https://github.com/soensingh/the-hotel-media#feedback
+    about: Email support@thehotelmedia.com privately. Please never post phone numbers, OTPs, payment IDs or booking details in a public issue.
+  - name: Ideas, questions and show-and-tell
+    url: https://github.com/soensingh/the-hotel-media/discussions
+    about: Suggest ideas and ask questions in Discussions.
+  - name: Website
+    url: https://thehotelmedia.com
+    about: Learn more about The Hotel Media and download the app.

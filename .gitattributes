@@ -1,0 +1,10 @@
+# Normalize line endings for text files
+* text=auto eol=lf
+
+# Images and media are binary
+*.png binary
+*.gif binary
+*.jpg binary
+*.jpeg binary
+*.mp4 binary
+*.mov binary

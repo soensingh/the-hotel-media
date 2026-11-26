@@ -1,0 +1,124 @@
+name: Bug report
+description: Something in The Hotel Media isn't working the way it should.
+title: "[Bug]: "
+labels: ["bug", "needs-repro"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this.
+
+        **Payment, booking, order or account problem?** Please don't file it here. Email **support@thehotelmedia.com** instead, and never paste phone numbers, OTPs, payment IDs or booking details into a public issue.
+        **Security problem?** Report it privately as described in [SECURITY.md](https://github.com/soensingh/the-hotel-media/blob/main/SECURITY.md).
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - iPhone (iOS)
+        - Android
+        - Business web console (property.thehotelmedia.com)
+        - Website (thehotelmedia.com)
+    validations:
+      required: true
+
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      description: "iPhone: Settings → General → iPhone Storage → The Hotel Media. Android: Settings → Apps → The Hotel Media."
+      placeholder: "1.2.6"
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: Phone model and OS version
+      placeholder: "iPhone 13, iOS 18.4 / Redmi Note 12, Android 14"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: account-type
+    attributes:
+      label: Account type
+      options:
+        - Individual
+        - Business
+        - Not signed in
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where in the app?
+      description: Pick everything that applies.
+      multiple: true
+      options:
+        - Sign-in and OTP
+        - Home feed
+        - Posts, reels, stories or notes
+        - Reviews
+        - Search and Nearby
+        - Room or table bookings
+        - Food orders
+        - Events and tickets
+        - Chats and calls
+        - Jobs
+        - Notifications
+        - Profile and settings
+        - Business plans and Insights
+        - Business web console
+        - Other (please say which below)
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The exact steps, starting from opening the app if you can.
+      placeholder: |
+        1. Open a hotel's profile
+        2. Tap Book a room and pick two nights
+        3. Tap Pay
+        4. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: What you expected to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      placeholder: What happened instead. Include any error message word for word.
+    validations:
+      required: true
+
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots or a screen recording (optional)
+      description: Drag files here. Please blur phone numbers, names and anything private before uploading.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you submit
+      options:
+        - label: I searched the existing issues and this hasn't been reported yet.
+          required: true
+        - label: I'm on the latest version of the app.
+          required: false
+        - label: This report contains no phone number, OTP, payment ID or other private information.
+          required: true

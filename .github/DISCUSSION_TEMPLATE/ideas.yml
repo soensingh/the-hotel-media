@@ -1,0 +1,33 @@
+title: "[Idea]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share an idea for The Hotel Media. Upvote ideas you like with a thumbs-up reaction; it helps decide what to build next.
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What should The Hotel Media do?
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it would help
+      description: When would you use it? Booking a stay, running a restaurant, hosting an event...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: audience
+    attributes:
+      label: Who is it for?
+      options:
+        - Guests and travelers
+        - Businesses
+        - Both
+    validations:
+      required: false

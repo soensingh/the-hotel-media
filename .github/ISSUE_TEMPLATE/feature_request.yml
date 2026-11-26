@@ -1,0 +1,56 @@
+name: Feature request
+description: Suggest a specific improvement to The Hotel Media.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea. For open-ended brainstorming, [Discussions → Ideas](https://github.com/soensingh/the-hotel-media/discussions/categories/ideas) is a great place too, and other people can upvote it there.
+
+  - type: dropdown
+    id: audience
+    attributes:
+      label: Who is this for?
+      options:
+        - Guests and travelers
+        - Businesses (hotels, restaurants, bars, banquets)
+        - Both
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe the situation where The Hotel Media falls short today.
+      placeholder: "When I'm planning a trip with friends, I'd like..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to happen?
+      description: How it might work, from your point of view.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Workarounds or alternatives you've tried (optional)
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else? (optional)
+      description: Sketches, screenshots or examples from other apps are welcome.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you submit
+      options:
+        - label: I searched existing issues and Discussions for this idea.
+          required: true
